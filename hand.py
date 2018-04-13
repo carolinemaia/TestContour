@@ -70,7 +70,7 @@ def findBiggestContour(mask, img):
     for cnt in cont:
         if key == index_big:
             x, y, w, h = cv2.boundingRect(cnt)
-            cv2.rectangle(img, (x,y), (x+w,y+h), (0, 255, 0), 2)
+            cv2.rectangle(img, (x,y), (x+w,y+h), (0, 255, 0), 1)
             return w
             break
         key += 1
